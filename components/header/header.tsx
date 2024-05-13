@@ -1,8 +1,25 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <header>
+       <nav>
+         <div className='navbar justify-between bg-base-300'>
+           <Link href="/" className='btn btn-ghost text-lg'>
+             E-Commerce
+           </Link>
+           <ul className="flex">
+            <li>
+              <Link className='btn btn-ghost rounded-btn' href="/cart">Cart</Link>
+            </li>
+            <li>
+              <Link className='btn btn-ghost rounded-btn' href="/cart">Sign in</Link>
+            </li>
+           </ul>
+         </div>
+       </nav>
+    </header>
   )
 }
 
