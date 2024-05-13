@@ -29,6 +29,3 @@ export default function ProductItem({product}:{product: Product}) {
     </div>
   )
 }
-
-
-//40:00
