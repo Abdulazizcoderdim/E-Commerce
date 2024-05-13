@@ -5,7 +5,7 @@ import { useRouter } from "next/router"
 import {useEffect, useState} from 'react'
 
 export default function AddToCart({item}:{item:OrderItem}) {
-    const router = useRouter()
+    // const router = useRouter()
     const {items,increase} = useCartService()
     const [existItem, setExistItem] = useState<OrderItem | undefined>()
     useEffect(()=>{
