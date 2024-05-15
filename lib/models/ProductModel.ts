@@ -19,10 +19,10 @@ const productSchema = new mongoose.Schema({
 }
 )
 
-const ProductModal = 
+const ProductModel = 
   mongoose.models.Product || mongoose.model("Product", productSchema)
 
-export default ProductModal;  
+export default ProductModel;  
 
 
 // Product-----------
